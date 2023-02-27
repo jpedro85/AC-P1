@@ -1,0 +1,10 @@
+Command line:
+   ALUTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49218
+
+Mon Feb 27 23:01:56 2023
+
+
+ Elaboration Time: 0.078125 sec

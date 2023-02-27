@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Z:/P1/Proj1/ALUTB_isim_beh.exe" -prj "Z:/P1/Proj1/ALUTB_beh.prj" "work.ALUTB" 
