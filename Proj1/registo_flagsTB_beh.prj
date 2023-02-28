@@ -1,0 +1,2 @@
+vhdl work "registo_flags.vhd"
+vhdl work "registo_flagsTB.vhd"

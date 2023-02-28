@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to Z:/P1/Proj1/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to Z:/P1/Proj1/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: RegistoA.prj
 
@@ -44,12 +44,12 @@ Parsing entity <RegistoA>.
 Parsing architecture <Behavioral> of entity <registoa>.
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.39 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.43 secs
  
 --> 
 
-Total memory usage is 161208 kilobytes
+Total memory usage is 215208 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -45,29 +45,22 @@ begin
 	
 		variable registo : STD_LOGIC_VECTOR (7 downto 0);
 		
-		begin
+	begin
 		
-			if rising_edge(clk) then
-			
-				if escr_r = '1' then
-					
-					if sel_r = '1' then
-						
-						registo:= dados_r;
-						operando<= registo;
-						
-					end if;
-					
-				else
+		if escr_r = '1' then
 				
-					operando<=registo;
+			if rising_edge(clk) and  sel_r = '1' then
 				
-				end if;
-			
+				registo:= dados_r;
+				
 			end if;
-			
+					
+		end if;
+				
+		operando<=registo;
+				
 	end process;
 
-
 end Behavioral;
+
 

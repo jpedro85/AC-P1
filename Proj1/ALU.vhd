@@ -61,7 +61,6 @@ begin
 									e_flag(4) <= '1';
 								else
 									e_flag(2) <= '0';
-									
 								end if;
 			when others =>
 				resultado <= "XXXXXXXX";

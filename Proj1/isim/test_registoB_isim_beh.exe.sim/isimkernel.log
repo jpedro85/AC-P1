@@ -1,15 +1,15 @@
 Command line:
    test_registoB_isim_beh.exe
      -simmode  gui
-     -simrunnum  2
-     -socket  49254
+     -simrunnum  0
+     -socket  49191
 
-Mon Feb 27 22:50:18 2023
+Tue Feb 28 22:28:52 2023
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 658.502 Meg
+ Current Memory Usage: 667.013 Meg
 
  Total Signals          : 10
  Total Nets             : 19
@@ -19,11 +19,11 @@ Mon Feb 27 22:50:18 2023
  Total Processes        : 3
  Total Traceable Variables  : 9
  Total Scalar Nets and Variables : 380
-Total Line Count : 19
+Total Line Count : 17
 
- Total Simulation Time: 0.0625 sec
+ Total Simulation Time: 0.109375 sec
 
- Current Memory Usage: 658.502 Meg
+ Current Memory Usage: 981.586 Meg
 
-Mon Feb 27 22:50:30 2023
+Tue Feb 28 22:29:46 2023
 

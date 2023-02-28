@@ -1,0 +1,29 @@
+Command line:
+   registo_flagsTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49197
+
+Tue Feb 28 22:48:51 2023
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 667.017 Meg
+
+ Total Signals          : 10
+ Total Nets             : 11
+ Total Signal Drivers   : 5
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 372
+Total Line Count : 35
+
+ Total Simulation Time: 0.4375 sec
+
+ Current Memory Usage: 667.017 Meg
+
+Tue Feb 28 22:54:30 2023
+
