@@ -29,15 +29,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity RegistoA is
+entity registo_a is
     Port ( dados_r : in  STD_LOGIC_VECTOR (7 downto 0);
 			  sel_r: in STD_LOGIC;
            escr_r : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            operando : out  STD_LOGIC_VECTOR (7 downto 0));
-end RegistoA;
+end registo_a;
 
-architecture Behavioral of RegistoA is
+architecture Behavioral of registo_a is
 
 begin
 
@@ -57,7 +57,7 @@ begin
 					
 		end if;
 				
-		operando<=registo;
+		operando <= registo;
 				
 	end process;
 
