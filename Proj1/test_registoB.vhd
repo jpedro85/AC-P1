@@ -1,36 +1,5 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   22:35:34 02/27/2023
--- Design Name:   
--- Module Name:   Z:/P1/Proj1/test_registoB.vhd
--- Project Name:  Proj1
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: RegistoB
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
  
 ENTITY test_registoB IS
 END test_registoB;
@@ -103,7 +72,6 @@ BEGIN
 		escr_r<='1';sel_r<='0';dados_r<="00000000";wait for 100ns;
 		--ESCr_R=0,SEL_R=0;Dados_r="00000000"
 		escr_r<='0';sel_r<='0';dados_r<="00000000";wait for 100ns;
-
 
       wait;
    end process;

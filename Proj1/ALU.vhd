@@ -1,36 +1,17 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    20:01:21 02/27/2023 
--- Design Name: 
--- Module Name:    ALU - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_SIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity ALU is
+entity alu is
     Port ( resultado : out signed (7 downto 0);
            e_flag : out  STD_LOGIC_VECTOR (4 downto 0);
            sel_alu : in  STD_LOGIC_VECTOR (2 downto 0);
            operando1 : in  signed (7 downto 0);
            operando2 : in  signed (7 downto 0));
-end ALU;
+end alu;
 
-architecture Behavioral of ALU is
+architecture Behavioral of alu is
 begin
 	process ( operando1 , operando2 , sel_alu ) begin
 		
@@ -69,4 +50,3 @@ begin
 		end case;
 	end process;
 end Behavioral;
-

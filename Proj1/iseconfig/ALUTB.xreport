@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-02-28T21:47:58</DateModified>
+  <DateModified>2023-03-01T18:15:50</DateModified>
   <ModuleName>ALUTB</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>Z:/P1/Proj1/iseconfig/ALUTB.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/P1/Proj1</ImplementationReportsDirectory>
+  <SavedFilePath>D:/VM/Partilha/P1/Proj1/iseconfig/ALUTB.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/VM/Partilha/P1/Proj1\</ImplementationReportsDirectory>
   <DateInitialized>2023-02-28T21:47:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
