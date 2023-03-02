@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/VM/Partilha/P1/Proj1/gesto_perifericos_TB_isim_beh.exe" -prj "D:/VM/Partilha/P1/Proj1/gesto_perifericos_TB_beh.prj" "gesto_perifericos_TB" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/test_muxPC_isim_beh.exe" -prj "C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/test_muxPC_beh.prj" "work.test_muxPC" 

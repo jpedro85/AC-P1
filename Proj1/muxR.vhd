@@ -52,6 +52,7 @@ begin
 				when "01" => dados_r <= dados_in;
 				when "10" => dados_r <= dados_m;
 				when "11" => dados_r <= constante;
+				when others => dados_r <= "XXXXXXXX";
 				
 			end case;
 			
