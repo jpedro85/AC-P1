@@ -49,6 +49,9 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memoria_instrocoes.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="memoria_instrocoes.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="memoria_instrocoes.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="pc.xst"/>
@@ -77,6 +80,9 @@
     <transform xil_pn:end_ts="1677702140" xil_pn:in_ck="-4573906465832308801" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1677702140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="RegistoA.vhd"/>
       <outfile xil_pn:name="RegistoB.vhd"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -106,6 +112,8 @@
     <transform xil_pn:end_ts="1677702140" xil_pn:in_ck="-4573906465832308801" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1677702140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="RegistoA.vhd"/>
       <outfile xil_pn:name="RegistoB.vhd"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -123,6 +131,8 @@
     <transform xil_pn:end_ts="1677702143" xil_pn:in_ck="-4573906465832308801" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2480235312624913598" xil_pn:start_ts="1677702140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -135,11 +145,12 @@
     <transform xil_pn:end_ts="1677702144" xil_pn:in_ck="4452630503615342299" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4862473528861273643" xil_pn:start_ts="1677702143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="gesto_perifericos_TB_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
