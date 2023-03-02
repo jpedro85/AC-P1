@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to D:/VM/Partilha/P1/Proj1/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: memoria_instrocoes.prj
 
@@ -45,7 +45,7 @@ Parsing architecture <Behavioral> of entity <memoria_instrocoes>.
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.18 secs
+Total CPU time to Xst completion: 8.07 secs
  
 --> 
 

@@ -1,0 +1,2 @@
+vhdl isim_temp "rom_descudificacao.vhd"
+vhdl isim_temp "rom_descudificacao_TB.vhd"

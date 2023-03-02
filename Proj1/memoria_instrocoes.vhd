@@ -81,7 +81,6 @@ begin
 			
 			when others 	 => opcode<="XXXXX"; sel_r<='X'; constante<="XXXXXXXX" ;
 			
-			
 		end case;
 			
 	end process;
