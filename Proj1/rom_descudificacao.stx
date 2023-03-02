@@ -3,16 +3,16 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:/VM/Partilha/P1/Proj1/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to D:/VM/Partilha/P1/Proj1/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
---> Reading design: memoria_instrocoes.prj
+--> Reading design: rom_descudificacao.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,13 +39,13 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\VM\Partilha\P1\Proj1\memoria_instrocoes.vhd" into library work
-Parsing entity <memoria_instrocoes>.
-Parsing architecture <Behavioral> of entity <memoria_instrocoes>.
+Parsing VHDL file "D:\VM\Partilha\P1\Proj1\rom_descudificacao.vhd" into library work
+Parsing entity <rom_descudificacao>.
+Parsing architecture <Behavioral> of entity <rom_descudificacao>.
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.07 secs
+Total CPU time to Xst completion: 7.38 secs
  
 --> 
 

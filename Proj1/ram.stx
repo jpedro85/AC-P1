@@ -10,9 +10,9 @@ Total CPU time to Xst completion: 0.15 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.15 secs
  
---> Reading design: memoria_instrocoes.prj
+--> Reading design: ram.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,13 +39,13 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\VM\Partilha\P1\Proj1\memoria_instrocoes.vhd" into library work
-Parsing entity <memoria_instrocoes>.
-Parsing architecture <Behavioral> of entity <memoria_instrocoes>.
+Parsing VHDL file "D:\VM\Partilha\P1\Proj1\RAM.vhd" into library work
+Parsing entity <ram>.
+Parsing architecture <Behavioral> of entity <ram>.
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.07 secs
+Total CPU time to Xst completion: 8.42 secs
  
 --> 
 

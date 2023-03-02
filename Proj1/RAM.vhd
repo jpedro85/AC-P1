@@ -29,15 +29,15 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity RAM is
+entity ram is
     Port ( operando1 : in  STD_LOGIC_VECTOR (7 downto 0);
            constante : in  STD_LOGIC_VECTOR (7 downto 0);
            wr : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            dados_m : out  STD_LOGIC_VECTOR (7 downto 0));
-end RAM;
+end ram;
 
-architecture Behavioral of RAM is
+architecture Behavioral of ram is
 
 begin
 
@@ -47,8 +47,11 @@ begin
 	variable memoria_endereco : memoria;
 	
 	begin
-		if rising_edge (clk) and wr = '1' then
+		
+		if wr = '1' then 
+			if  rising_edge (clk) then
 				memoria_endereco(TO_INTEGER(unsigned(constante))) := operando1;
+			end if;
 		else
 			dados_m <= memoria_endereco(TO_INTEGER(unsigned(constante)));
 		end if;
