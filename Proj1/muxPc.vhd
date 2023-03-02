@@ -47,11 +47,12 @@ begin
 			case sel_pc is
 				
 				when "000" => escr_pc <= s_flag;
-				when "001" => escr_pc <= s_flag;
+				when "001" => escr_pc <= testzero;
 				when "010" => escr_pc <= operando1_7;
 				when "011" => escr_pc <= '0';
 				when "100" => escr_pc <= '1';
-			
+				when others => escr_pc <= 'X';
+
 			end case;
 			
 	end process;

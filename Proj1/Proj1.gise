@@ -43,7 +43,6 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="alu_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="alu_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="gesto_perifericos_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="gesto_perifericos_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="gesto_perifericos_TB_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -52,6 +51,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memoria_instrocoes.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="memoria_instrocoes.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="memoria_instrocoes.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muxPc.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="muxPc.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="muxPc.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="muxR.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="muxR.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="muxR.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="pc.xst"/>
@@ -66,6 +71,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="resgisto_b_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="resgisto_b_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="resgisto_b_TB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_muxPC_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_muxPC_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_muxPC_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_muxPC_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_muxR_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_muxR_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_registoB_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_registoa_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
@@ -77,18 +88,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1677702140" xil_pn:in_ck="-4573906465832308801" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1677702140">
+    <transform xil_pn:end_ts="1677778481" xil_pn:in_ck="2457661819438687322" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1677778481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="RegistoA.vhd"/>
       <outfile xil_pn:name="RegistoB.vhd"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_TB.vhd"/>
       <outfile xil_pn:name="gesto_perifericos_TB.vhd"/>
       <outfile xil_pn:name="gestor_perifericos.vhd"/>
+      <outfile xil_pn:name="memoria_instrocoes.vhd"/>
+      <outfile xil_pn:name="muxPc.vhd"/>
       <outfile xil_pn:name="muxR.vhd"/>
       <outfile xil_pn:name="pc.vhd"/>
       <outfile xil_pn:name="pc_TB.vhd"/>
@@ -96,12 +106,15 @@
       <outfile xil_pn:name="registo_flagsTB.vhd"/>
       <outfile xil_pn:name="resgisto_a_TB.vhd"/>
       <outfile xil_pn:name="resgisto_b_TB.vhd"/>
+      <outfile xil_pn:name="rom_descudificacao.vhd"/>
+      <outfile xil_pn:name="test_muxPC.vhd"/>
+      <outfile xil_pn:name="testmuxR.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1677702140" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4909813990258024185" xil_pn:start_ts="1677702140">
+    <transform xil_pn:end_ts="1677778064" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2456247458311824578" xil_pn:start_ts="1677778064">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1677702140" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3612519587590123877" xil_pn:start_ts="1677702140">
+    <transform xil_pn:end_ts="1677778064" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7083774974643676576" xil_pn:start_ts="1677778064">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -109,17 +122,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1677702140" xil_pn:in_ck="-4573906465832308801" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1677702140">
+    <transform xil_pn:end_ts="1677778481" xil_pn:in_ck="2457661819438687322" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1677778481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="RegistoA.vhd"/>
       <outfile xil_pn:name="RegistoB.vhd"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_TB.vhd"/>
       <outfile xil_pn:name="gesto_perifericos_TB.vhd"/>
       <outfile xil_pn:name="gestor_perifericos.vhd"/>
+      <outfile xil_pn:name="memoria_instrocoes.vhd"/>
+      <outfile xil_pn:name="muxPc.vhd"/>
       <outfile xil_pn:name="muxR.vhd"/>
       <outfile xil_pn:name="pc.vhd"/>
       <outfile xil_pn:name="pc_TB.vhd"/>
@@ -127,30 +140,30 @@
       <outfile xil_pn:name="registo_flagsTB.vhd"/>
       <outfile xil_pn:name="resgisto_a_TB.vhd"/>
       <outfile xil_pn:name="resgisto_b_TB.vhd"/>
+      <outfile xil_pn:name="rom_descudificacao.vhd"/>
+      <outfile xil_pn:name="test_muxPC.vhd"/>
+      <outfile xil_pn:name="testmuxR.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1677702143" xil_pn:in_ck="-4573906465832308801" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2480235312624913598" xil_pn:start_ts="1677702140">
+    <transform xil_pn:end_ts="1677778484" xil_pn:in_ck="2457661819438687322" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8377164477072074508" xil_pn:start_ts="1677778481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="gesto_perifericos_TB_beh.prj"/>
-      <outfile xil_pn:name="gesto_perifericos_TB_isim_beh.exe"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="test_muxPC_beh.prj"/>
+      <outfile xil_pn:name="test_muxPC_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1677702144" xil_pn:in_ck="4452630503615342299" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4862473528861273643" xil_pn:start_ts="1677702143">
+    <transform xil_pn:end_ts="1677778484" xil_pn:in_ck="3328516276975076048" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4162939182797298881" xil_pn:start_ts="1677778484">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="test_muxPC_isim_beh.wdb"/>
     </transform>
   </transforms>
 

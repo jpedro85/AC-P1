@@ -1,20 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/VM/Partilha/P1/Proj1/gesto_perifericos_TB_isim_beh.exe -prj D:/VM/Partilha/P1/Proj1/gesto_perifericos_TB_beh.prj gesto_perifericos_TB 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/test_muxPC_isim_beh.exe -prj C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/test_muxPC_beh.prj work.test_muxPC 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/VM/Partilha/P1/Proj1/gestor_perifericos.vhd" into library work
-Parsing VHDL file "D:/VM/Partilha/P1/Proj1/gesto_perifericos_TB.vhd" into library work
+Parsing VHDL file "C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/muxPc.vhd" into library work
+Parsing VHDL file "C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/test_muxPC.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity gestor_perifericos [gestor_perifericos_default]
-Compiling architecture behavior of entity gesto_perifericos_tb
+Compiling architecture behavioral of entity muxPc [muxpc_default]
+Compiling architecture behavior of entity test_muxpc
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: O sistema não conseguiu localizar o caminho especificado, "isim\gesto_perifericos_TB_isim_beh.exe.sim\libPortability.dll".
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: O sistema não conseguiu localizar o caminho especificado, "isim\test_muxPC_isim_beh.exe.sim\libPortability.dll".
 Compiled 5 VHDL Units
-Built simulation executable D:/VM/Partilha/P1/Proj1/gesto_perifericos_TB_isim_beh.exe
-Fuse Memory Usage: 30420 KB
-Fuse CPU Usage: 484 ms
+Built simulation executable C:/Users/Pedro/Desktop/Pastas/trabalhos/UMa/2_Ano/2_Semestre/AC/P1/AC-P1/Proj1/test_muxPC_isim_beh.exe
+Fuse Memory Usage: 29516 KB
+Fuse CPU Usage: 390 ms
