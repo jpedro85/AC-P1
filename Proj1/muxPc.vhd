@@ -33,7 +33,7 @@ entity muxPc is
     Port ( escr_pc : out  STD_LOGIC;
            sel_pc : in  STD_LOGIC_VECTOR (2 downto 0);
            s_flag : in  STD_LOGIC;
-           operando1 : in  STD_LOGIC_VECTOR (7 downto 0));
+           operando1: in  STD_LOGIC_VECTOR (7 downto 0));
 end muxPc;
 
 architecture Behavioral of muxPc is
