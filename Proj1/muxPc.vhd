@@ -33,22 +33,21 @@ entity muxPc is
     Port ( escr_pc : out  STD_LOGIC;
            sel_pc : in  STD_LOGIC_VECTOR (2 downto 0);
            s_flag : in  STD_LOGIC;
-           operando1_7 : in  STD_LOGIC;
-           testzero : in  STD_LOGIC);
+           operando1: in  STD_LOGIC_VECTOR (7 downto 0));
 end muxPc;
 
 architecture Behavioral of muxPc is
 
 begin
 
-	process(sel_pc,s_flag,operando1_7,testzero)
+	process(sel_pc,s_flag,operando1)
 		begin
 		
 			case sel_pc is
 				
 				when "000" => escr_pc <= s_flag;
-				when "001" => escr_pc <= testzero;
-				when "010" => escr_pc <= operando1_7;
+				when "001" => escr_pc <= not(operando1(7) or operando1(6) or operando1(5) or operando1(4) or operando1(3) or operando1(2) or operando1(1) or operando1(0));
+				when "010" => escr_pc <= operando1(7);
 				when "011" => escr_pc <= '0';
 				when "100" => escr_pc <= '1';
 				when others => escr_pc <= 'X';

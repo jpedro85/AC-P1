@@ -32,14 +32,14 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY rom_descudificacao_TB IS
-END rom_descudificacao_TB;
+ENTITY rom_descodificacao_TB IS
+END rom_descodificacao_TB;
  
-ARCHITECTURE behavior OF rom_descudificacao_TB IS 
+ARCHITECTURE behavior OF rom_descodificacao_TB IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT rom_descudificacao
+    COMPONENT rom_descodificacao
     PORT(
          opcode : IN  std_logic_vector(4 downto 0);
          sel_alu : OUT  std_logic_vector(2 downto 0);
@@ -71,7 +71,7 @@ ARCHITECTURE behavior OF rom_descudificacao_TB IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: rom_descudificacao PORT MAP (
+   uut: rom_descodificacao PORT MAP (
           opcode => opcode,
           sel_alu => sel_alu,
           escr_p => escr_p,

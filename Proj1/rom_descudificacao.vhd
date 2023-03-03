@@ -29,7 +29,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity rom_descudificacao is
+entity rom_descodificacao is
     Port ( opcode : in  STD_LOGIC_VECTOR (4 downto 0);
            sel_alu : out  STD_LOGIC_VECTOR (2 downto 0);
            escr_p : out  STD_LOGIC;
@@ -39,9 +39,9 @@ entity rom_descudificacao is
            sel_pc : out  STD_LOGIC_VECTOR (2 downto 0);
            escr_flag : out  STD_LOGIC;
            sel_flag : out  STD_LOGIC_VECTOR (2 downto 0));
-end rom_descudificacao;
+end rom_descodificacao;
 
-architecture Behavioral of rom_descudificacao is
+architecture Behavioral of rom_descodificacao is
 
 begin
 	
