@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:/VM/Partilha/P1/Proj1/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to D:/VM/Partilha/P1/Proj1/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: processador.prj
 
@@ -54,9 +54,6 @@ Parsing architecture <Behavioral> of entity <registo_a>.
 Parsing VHDL file "D:\VM\Partilha\P1\Proj1\pc.vhd" into library work
 Parsing entity <pc>.
 Parsing architecture <Behavioral> of entity <pc>.
-Parsing VHDL file "D:\VM\Partilha\P1\Proj1\nor.vhd" into library work
-Parsing entity <nor8bit>.
-Parsing architecture <Behavioral> of entity <nor8bit>.
 Parsing VHDL file "D:\VM\Partilha\P1\Proj1\muxR.vhd" into library work
 Parsing entity <muxR>.
 Parsing architecture <Behavioral> of entity <muxr>.
@@ -71,11 +68,11 @@ Parsing entity <alu>.
 Parsing architecture <Behavioral> of entity <alu>.
 Parsing VHDL file "D:\VM\Partilha\P1\Proj1\processador.vhd" into library work
 Parsing entity <processador>.
-Parsing architecture <Behavioral> of entity <processador>.
+Parsing architecture <structural> of entity <processador>.
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.18 secs
+Total CPU time to Xst completion: 7.67 secs
  
 --> 
 

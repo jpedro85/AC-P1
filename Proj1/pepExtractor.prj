@@ -1,5 +1,13 @@
-<<<<<<< HEAD
 work	"RAM.vhd"
-=======
+work	"RegistoA.vhd"
+work	"RegistoB.vhd"
+work	"alu.vhd"
+work	"gestor_perifericos.vhd"
+work	"memoria_instrocoes.vhd"
+work	"motherboard.vhd"
 work	"muxPc.vhd"
->>>>>>> main
+work	"muxR.vhd"
+work	"pc.vhd"
+work	"processador.vhd"
+work	"registo_flags.vhd"
+work	"rom_descudificacao.vhd"

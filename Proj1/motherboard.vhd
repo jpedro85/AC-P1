@@ -33,7 +33,12 @@ entity motherboard is
     Port ( reset : in  STD_LOGIC;
 			  clk : in  STD_LOGIC;
            pin : in  STD_LOGIC_VECTOR (7 downto 0);
-           pout : out  STD_LOGIC_VECTOR (7 downto 0));
+           pout : out  STD_LOGIC_VECTOR (7 downto 0);
+			  
+			  --testes
+			  intrucao : out STD_LOGIC_VECTOR (7 downto 0)
+			  );
+			  
 end motherboard;
 
 architecture structural of motherboard is
@@ -73,6 +78,8 @@ architecture structural of motherboard is
 	signal s_sel_r ,s_wr: STD_LOGIC ;
 	
 begin
+	
+	intrucao <= s_endereco_instrucao;
 	
 	m_i : memoria_instrocoes port map ( s_endereco_instrucao ,s_opcode ,s_sel_r ,s_constante );
 	

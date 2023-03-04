@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/VM/Partilha/P1/Proj1/rom_descodificacao_TB_isim_beh.exe" -prj "D:/VM/Partilha/P1/Proj1/rom_descodificacao_TB_beh.prj" "work.rom_descodificacao_TB" 
+-intstyle "ise" -incremental -lib "secureip" -o "D:/VM/Partilha/P1/Proj1/motheboard_TB_isim_beh.exe" -prj "D:/VM/Partilha/P1/Proj1/motheboard_TB_beh.prj" "work.motheboard_TB" 
