@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:/VM/Partilha/P1/Proj1/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to D:/VM/Partilha/P1/Proj1/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: processador.prj
 
@@ -71,8 +71,8 @@ Parsing entity <processador>.
 Parsing architecture <structural> of entity <processador>.
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.67 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.11 secs
  
 --> 
 

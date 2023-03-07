@@ -163,6 +163,8 @@ begin
 	mux_pc : muxPC port map( s_escr_pc ,s_sel_pc ,s_s_flag ,s_operando1);
 	
 	operando1 <= s_operando1;
+	
+	endereco_m <= constante;
 
 end structural;
 

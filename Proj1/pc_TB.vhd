@@ -61,9 +61,6 @@ BEGIN
       wait for clk_period*10;
 
       reset <= '1' ; escr_pc <= '0' ; constante <= "00000000"; wait for 100 ns;
-		reset <= '0' ; escr_pc <= '0' ; constante <= "00000011"; wait for 100 ns;
-		reset <= '0' ; escr_pc <= '0' ; constante <= "00000101"; wait for 100 ns;
-		reset <= '0' ; escr_pc <= '0' ; constante <= "00000111"; wait for 100 ns;
 		reset <= '0' ; escr_pc <= '0' ; constante <= "00001111"; wait for 100 ns;
 		reset <= '0' ; escr_pc <= '1' ; constante <= "00000101"; wait for 100 ns;
 		reset <= '0' ; escr_pc <= '0' ; constante <= "00001111"; wait for 100 ns;

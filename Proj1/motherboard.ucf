@@ -1,0 +1,51 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "pin[7]" LOC = R13;
+NET "pin[6]" LOC = U18;
+
+# PlanAhead Generated IO constraints 
+
+NET "pin[7]" IOSTANDARD = LVCMOS18;
+NET "pin[6]" IOSTANDARD = LVCMOS18;
+NET "pin[5]" IOSTANDARD = LVCMOS18;
+NET "pin[4]" IOSTANDARD = LVCMOS18;
+NET "pin[3]" IOSTANDARD = LVCMOS18;
+NET "pin[2]" IOSTANDARD = LVCMOS18;
+NET "pin[1]" IOSTANDARD = LVCMOS18;
+NET "pin[0]" IOSTANDARD = LVCMOS18;
+NET "pout[7]" IOSTANDARD = LVCMOS18;
+NET "pout[6]" IOSTANDARD = LVCMOS18;
+NET "pout[5]" IOSTANDARD = LVCMOS18;
+NET "pout[4]" IOSTANDARD = LVCMOS18;
+NET "pout[3]" IOSTANDARD = LVCMOS18;
+NET "pout[2]" IOSTANDARD = LVCMOS18;
+NET "pout[1]" IOSTANDARD = LVCMOS18;
+NET "pout[0]" IOSTANDARD = LVCMOS18;
+
+# PlanAhead Generated physical constraints 
+
+NET "pin[5]" LOC = T18;
+NET "pin[4]" LOC = R17;
+NET "pin[3]" LOC = R15;
+NET "pin[2]" LOC = M13;
+NET "pin[1]" LOC = L16;
+NET "pout[7]" LOC = U16;
+NET "pout[6]" LOC = U17;
+NET "pout[5]" LOC = V17;
+NET "pout[4]" LOC = R18;
+NET "pout[3]" LOC = N14;
+NET "pout[2]" LOC = J13;
+NET "pout[1]" LOC = K15;
+NET "pout[0]" LOC = H17;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS18;
+NET "reset" IOSTANDARD = LVCMOS18;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = E3;
+NET "reset" LOC = N17;
+NET "pin[0]" LOC = J15;

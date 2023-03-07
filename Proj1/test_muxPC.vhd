@@ -44,8 +44,7 @@ ARCHITECTURE behavior OF test_muxPC IS
          escr_pc : OUT  std_logic;
          sel_pc : IN  std_logic_vector(2 downto 0);
          s_flag : IN  std_logic;
-         operando1_7 : IN  std_logic;
-         testzero : IN  std_logic
+         operando1 : IN  std_logic_Vector (7 downto 0)
         );
     END COMPONENT;
     
@@ -53,8 +52,8 @@ ARCHITECTURE behavior OF test_muxPC IS
    --Inputs
    signal sel_pc : std_logic_vector(2 downto 0) := (others => '0');
    signal s_flag : std_logic := '0';
-   signal operando1_7 : std_logic := '0';
-   signal testzero : std_logic := '0';
+   signal operando1 : std_logic_Vector (7 downto 0);
+
 
  	--Outputs
    signal escr_pc : std_logic;
@@ -69,8 +68,7 @@ BEGIN
           escr_pc => escr_pc,
           sel_pc => sel_pc,
           s_flag => s_flag,
-          operando1_7 => operando1_7,
-          testzero => testzero
+          operando1 => operando1
         );
 
 
@@ -79,11 +77,13 @@ BEGIN
    begin		
       
 		--sel_pc="000";s_flag='1';operando1_7<='0';testzero<='0';
-		sel_pc <= "000";s_flag <= '1'; operando1_7 <= '0' ;testzero <='0'; wait for 100 ns;
-		sel_pc <= "001";s_flag <= '0'; operando1_7 <= '0' ;testzero <='0'; wait for 100 ns;
-		sel_pc <= "010";s_flag <= '0'; operando1_7 <= '1' ;testzero <='0'; wait for 100 ns;
-		sel_pc <= "011";s_flag <= '1'; operando1_7 <= '1' ;testzero <='1'; wait for 100 ns;
-		sel_pc <= "100";s_flag <= '0'; operando1_7 <= '0' ;testzero <='0'; wait for 100 ns;
+		sel_pc <= "000";s_flag <= '1'; operando1 <= "00000000" ; wait for 50 ns;
+		sel_pc <= "000";s_flag <= '0'; operando1 <= "00000000" ; wait for 50 ns;
+		sel_pc <= "010";s_flag <= '0'; operando1 <= "10000000" ; wait for 50 ns;
+		sel_pc <= "001";s_flag <= '0'; operando1 <= "01010010" ; wait for 50 ns;
+		sel_pc <= "001";s_flag <= '1'; operando1 <= "00000000" ; wait for 50 ns;
+		sel_pc <= "011";s_flag <= '1'; operando1 <= "00010000" ; wait for 50 ns;
+		sel_pc <= "100";s_flag <= '0'; operando1 <= "01010010" ; wait for 50 ns;
 		
       wait;
    end process;

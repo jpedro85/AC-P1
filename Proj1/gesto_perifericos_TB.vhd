@@ -94,10 +94,10 @@ BEGIN
 
       wait for clk_period*10;
 
-		pin <= "00000000"; escr_p <= '0'; operando1 <= "00111011"; wait for 100 ns;
-		pin <= "10101010"; escr_p <= '0'; operando1 <= "01111111"; wait for 100 ns;
-		pin <= "10101010"; escr_p <= '1'; operando1 <= "00110100"; wait for 100 ns;
-		pin <= "10101010"; escr_p <= '0'; operando1 <= "00110100"; wait for 100 ns;
+		pin <= "00000000"; escr_p <= '0'; operando1 <= "00111011"; wait for 50 ns;
+		pin <= "10101010"; escr_p <= '0'; operando1 <= "01111111"; wait for 50 ns;
+		pin <= "10101010"; escr_p <= '1'; operando1 <= "00110100"; wait for 50 ns;
+		pin <= "10101010"; escr_p <= '0'; operando1 <= "00110100"; wait for 50 ns;
 		
       wait;
    end process;

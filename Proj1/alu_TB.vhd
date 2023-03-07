@@ -49,7 +49,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+      wait for 25 ns;	
 
 
       sel_alu <= "111"; operando1 <= "00000000"; operando2 <= "00000010"; wait for 100 ns;
