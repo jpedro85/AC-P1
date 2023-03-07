@@ -8,6 +8,7 @@ Parsing VHDL file "D:/VM/Partilha/P1/Proj1/registo_flags.vhd" into library work
 Parsing VHDL file "D:/VM/Partilha/P1/Proj1/RegistoB.vhd" into library work
 Parsing VHDL file "D:/VM/Partilha/P1/Proj1/RegistoA.vhd" into library work
 Parsing VHDL file "D:/VM/Partilha/P1/Proj1/pc.vhd" into library work
+Parsing VHDL file "D:/VM/Partilha/P1/Proj1/Nor_8_bits.vhd" into library work
 Parsing VHDL file "D:/VM/Partilha/P1/Proj1/muxR.vhd" into library work
 Parsing VHDL file "D:/VM/Partilha/P1/Proj1/muxPc.vhd" into library work
 Parsing VHDL file "D:/VM/Partilha/P1/Proj1/gestor_perifericos.vhd" into library work
@@ -36,13 +37,14 @@ Compiling architecture behavioral of entity alu [alu_default]
 Compiling architecture behavioral of entity gestor_perifericos [gestor_perifericos_default]
 Compiling architecture behavioral of entity pc [pc_default]
 Compiling architecture behavioral of entity muxPc [muxpc_default]
+Compiling architecture behavioral of entity Nor_8_bits [nor_8_bits_default]
 Compiling architecture structural of entity processador [processador_default]
 Compiling architecture structural of entity motherboard [motherboard_default]
 Compiling architecture behavior of entity motheboard_tb
 Time Resolution for simulation is 1ps.
-Waiting for 4 sub-compilation(s) to finish...
+Waiting for 5 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: O sistema não conseguiu localizar o caminho especificado, "isim\motheboard_TB_isim_beh.exe.sim\libPortability.dll".
-Compiled 33 VHDL Units
+Compiled 35 VHDL Units
 Built simulation executable D:/VM/Partilha/P1/Proj1/motheboard_TB_isim_beh.exe
-Fuse Memory Usage: 38692 KB
-Fuse CPU Usage: 874 ms
+Fuse Memory Usage: 38012 KB
+Fuse CPU Usage: 1109 ms

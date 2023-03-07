@@ -44,10 +44,10 @@ ARCHITECTURE behavior OF motheboard_TB IS
          reset : IN  std_logic;
          clk : IN  std_logic;
          pin : IN  std_logic_vector(7 downto 0);
-         pout : OUT  std_logic_vector(7 downto 0);
+         pout : OUT  std_logic_vector(7 downto 0)
 			
 			--teste
-			intrucao : out STD_LOGIC_VECTOR (7 downto 0)
+			--intrucao : out STD_LOGIC_VECTOR (7 downto 0)
         );
     END COMPONENT;
     
@@ -59,7 +59,7 @@ ARCHITECTURE behavior OF motheboard_TB IS
 
  	--Outputs
    signal pout : std_logic_vector(7 downto 0);
-	signal intrucao : STD_LOGIC_VECTOR (7 downto 0);
+	--signal intrucao : STD_LOGIC_VECTOR (7 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -71,8 +71,8 @@ BEGIN
           reset => reset,
           clk => clk,
           pin => pin,
-          pout => pout,
-			 intrucao => intrucao
+          pout => pout
+		--	 intrucao => intrucao
         );
 
    -- Clock process definitions
@@ -94,7 +94,13 @@ BEGIN
       wait for clk_period*10;
 
       reset <= '1'; pin <= "00000000"; wait for 100 ns;
-		reset <= '0'; pin <= "00011000"; wait for 100 ns;
+		reset <= '0'; pin <= "00011000"; wait for 1000 ns;
+		
+		reset <= '1'; pin <= "00011000"; wait for 100 ns;
+		reset <= '0'; pin <= "00000111"; wait for 1000 ns;
+		
+		reset <= '1'; pin <= "00011000"; wait for 100 ns;
+		reset <= '0'; pin <= "10000111"; wait for 1000 ns;
 
       wait;
    end process;

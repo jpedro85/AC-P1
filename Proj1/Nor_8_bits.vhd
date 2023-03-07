@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    20:02:41 03/01/2023 
+-- Create Date:    22:57:11 03/07/2023 
 -- Design Name: 
--- Module Name:    muxPc - Behavioral 
+-- Module Name:    Nor_8_bits - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,34 +29,27 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity muxPc is
-    Port ( escr_pc : out  STD_LOGIC;
-           sel_pc : in  STD_LOGIC_VECTOR (2 downto 0);
-           s_flag : in  STD_LOGIC;
-           operando1_nor: in  STD_LOGIC;
-			  operando1_7 : in  STD_LOGIC
-			  );
-end muxPc;
+entity Nor_8_bits is
+    Port ( a : in  STD_LOGIC;
+           b : in  STD_LOGIC;
+           c : in  STD_LOGIC;
+           d : in  STD_LOGIC;
+           e : in  STD_LOGIC;
+           f : in  STD_LOGIC;
+           g : in  STD_LOGIC;
+           h : in  STD_LOGIC;
+           s  : out  STD_LOGIC);
+end Nor_8_bits;
 
-architecture Behavioral of muxPc is
+architecture Behavioral of Nor_8_bits is
 
 begin
-
-	process(sel_pc,s_flag,operando1_nor,operando1_7)
-		begin
-		
-			case sel_pc is
-				
-				when "000" => escr_pc <= s_flag;
-				when "001" => escr_pc <= operando1_nor;
-				when "010" => escr_pc <= operando1_7;
-				when "011" => escr_pc <= '0';
-				when "100" => escr_pc <= '1';
-				when others => escr_pc <= 'X';
-
-			end case;
-			
-	end process;
 	
+	process (a,b,c,d,e,f,g,h) begin
+		
+		s <= not ( a or b  or c or d or e or f or g or h );
+		
+	end process;
+
 end Behavioral;
 

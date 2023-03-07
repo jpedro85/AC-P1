@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:/VM/Partilha/P1/Proj1/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to D:/VM/Partilha/P1/Proj1/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Reading design: motherboard.prj
 
@@ -54,6 +54,9 @@ Parsing architecture <Behavioral> of entity <registo_a>.
 Parsing VHDL file "D:\VM\Partilha\P1\Proj1\pc.vhd" into library work
 Parsing entity <pc>.
 Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "D:\VM\Partilha\P1\Proj1\Nor_8_bits.vhd" into library work
+Parsing entity <Nor_8_bits>.
+Parsing architecture <Behavioral> of entity <nor_8_bits>.
 Parsing VHDL file "D:\VM\Partilha\P1\Proj1\muxR.vhd" into library work
 Parsing entity <muxR>.
 Parsing architecture <Behavioral> of entity <muxr>.
@@ -80,8 +83,8 @@ Parsing entity <motherboard>.
 Parsing architecture <structural> of entity <motherboard>.
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.96 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.66 secs
  
 --> 
 

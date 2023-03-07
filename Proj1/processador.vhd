@@ -42,7 +42,7 @@ entity processador is
            sel_r : in  STD_LOGIC;
            constante : in  STD_LOGIC_VECTOR (7 downto 0);
 			  
-			  endereco_m : out  STD_LOGIC_VECTOR (7 downto 0);--na interaça
+			  endereco_m : out  STD_LOGIC_VECTOR (7 downto 0);
 			  dados_m : in  STD_LOGIC_VECTOR (7 downto 0);
            operando1 : out  STD_LOGIC_VECTOR (7 downto 0);
            wr : out  STD_LOGIC;
@@ -77,7 +77,9 @@ architecture structural of processador is
 		Port ( escr_pc : out  STD_LOGIC;
            sel_pc : in  STD_LOGIC_VECTOR (2 downto 0);
            s_flag : in  STD_LOGIC;
-           operando1: in  STD_LOGIC_VECTOR (7 downto 0));
+           operando1_nor: in  STD_LOGIC;
+			  operando1_7 : in  STD_LOGIC
+			  );
 	end component;
 	
 	component registo_a
@@ -129,16 +131,24 @@ architecture structural of processador is
            endereco : out  STD_LOGIC_VECTOR (7 downto 0));
 	end component;
 	
-	component nor8bit 
-		Port ( A : STD_LOGIC_VECTOR ( 7 downto 0 );
-				 S : STD_LOGIC );
+	component Nor_8_bits is
+		Port ( a : in  STD_LOGIC;
+			  b : in  STD_LOGIC;
+			  c : in  STD_LOGIC;
+			  d : in  STD_LOGIC;
+			  e : in  STD_LOGIC;
+			  f : in  STD_LOGIC;
+			  g : in  STD_LOGIC;
+			  h : in  STD_LOGIC;
+			  s  : out  STD_LOGIC);
 	end component;
+
 		
 	signal s_dados_r , s_dados_in : STD_LOGIC_VECTOR (7 downto 0);
 	signal s_operando1 , s_operando2 : STD_LOGIC_VECTOR (7 downto 0);
 	signal s_resultado : SIGNED (7 downto 0);
 	signal s_e_flag : STD_LOGIC_VECTOR (4 downto 0);
-	signal s_escr_p , s_escr_r , s_escr_flag , s_escr_pc , s_s_flag : STD_LOGIC ;
+	signal s_escr_p , s_escr_r , s_escr_flag , s_escr_pc , s_s_flag , s_saida_nor : STD_LOGIC ;
 	signal s_sel_data : STD_LOGIC_VECTOR (1 downto 0);
 	signal s_sel_alu , s_sel_flag , s_sel_pc : STD_LOGIC_VECTOR (2 downto 0);
 
@@ -160,7 +170,9 @@ begin
 	
 	p_c : pc port map (reset ,s_escr_pc ,constante ,clk ,endereco_instrucao);
 			
-	mux_pc : muxPC port map( s_escr_pc ,s_sel_pc ,s_s_flag ,s_operando1);
+	mux_pc : muxPC port map( s_escr_pc ,s_sel_pc ,s_s_flag ,s_saida_nor,s_operando1(7));
+	
+	n_or_8 : Nor_8_bits port map (s_operando1(7),s_operando1(6),s_operando1(5),s_operando1(4),s_operando1(3),s_operando1(2),s_operando1(1),s_operando1(0),s_saida_nor);
 	
 	operando1 <= s_operando1;
 	
