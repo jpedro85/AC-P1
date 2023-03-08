@@ -94,13 +94,9 @@ BEGIN
       wait for clk_period*10;
 
       reset <= '1'; pin <= "00000000"; wait for 100 ns;
-		reset <= '0'; pin <= "00011000"; wait for 1000 ns;
+		reset <= '0'; pin <= "00010100"; wait for 1000 ns;
 		
-		reset <= '1'; pin <= "00011000"; wait for 100 ns;
-		reset <= '0'; pin <= "00000111"; wait for 1000 ns;
 		
-		reset <= '1'; pin <= "00011000"; wait for 100 ns;
-		reset <= '0'; pin <= "10000111"; wait for 1000 ns;
 
       wait;
    end process;

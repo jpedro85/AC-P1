@@ -46,5 +46,5 @@ Waiting for 5 sub-compilation(s) to finish...
 WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: O sistema não conseguiu localizar o caminho especificado, "isim\motheboard_TB_isim_beh.exe.sim\libPortability.dll".
 Compiled 35 VHDL Units
 Built simulation executable D:/VM/Partilha/P1/Proj1/motheboard_TB_isim_beh.exe
-Fuse Memory Usage: 38012 KB
-Fuse CPU Usage: 1109 ms
+Fuse Memory Usage: 38672 KB
+Fuse CPU Usage: 858 ms

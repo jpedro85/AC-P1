@@ -1,6 +1,9 @@
-set -tmpdir "D:/VM/Partilha/P1/Proj1/xst/projnav.tmp"
-set -xsthdpdir "D:/VM/Partilha/P1/Proj1/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn motherboard.prj
+-ofn motherboard
+-ofmt NGC
 -p xc7a100t-3-csg324
 -top motherboard
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn motherboard.prj
