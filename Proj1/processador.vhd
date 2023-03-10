@@ -1,35 +1,7 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    18:54:39 03/03/2023 
--- Design Name: 
--- Module Name:    processador - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_SIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity processador is
     Port ( reset : in  STD_LOGIC;
@@ -78,7 +50,9 @@ architecture structural of processador is
            sel_pc : in  STD_LOGIC_VECTOR (2 downto 0);
            s_flag : in  STD_LOGIC;
            operando1_nor: in  STD_LOGIC;
-			  operando1_7 : in  STD_LOGIC
+			  operando1_7 : in  STD_LOGIC;
+			  zero : in STD_LOGIC;
+			  um : in STD_LOGIC
 			  );
 	end component;
 	
@@ -151,6 +125,8 @@ architecture structural of processador is
 	signal s_escr_p , s_escr_r , s_escr_flag , s_escr_pc , s_s_flag , s_saida_nor : STD_LOGIC ;
 	signal s_sel_data : STD_LOGIC_VECTOR (1 downto 0);
 	signal s_sel_alu , s_sel_flag , s_sel_pc : STD_LOGIC_VECTOR (2 downto 0);
+	signal s_zero : STD_LOGIC := '0';
+	signal s_um : STD_LOGIC := '1';
 
 begin
 	
@@ -170,7 +146,7 @@ begin
 	
 	p_c : pc port map (reset ,s_escr_pc ,constante ,clk ,endereco_instrucao);
 			
-	mux_pc : muxPC port map( s_escr_pc ,s_sel_pc ,s_s_flag ,s_saida_nor,s_operando1(7));
+	mux_pc : muxPC port map( s_escr_pc ,s_sel_pc ,s_s_flag ,s_saida_nor,s_operando1(7),s_zero,s_um);
 	
 	n_or_8 : Nor_8_bits port map (s_operando1(7),s_operando1(6),s_operando1(5),s_operando1(4),s_operando1(3),s_operando1(2),s_operando1(1),s_operando1(0),s_saida_nor);
 	
